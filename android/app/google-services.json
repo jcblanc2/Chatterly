@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "58918663131",
+    "project_id": "chatterly-48cda",
+    "storage_bucket": "chatterly-48cda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:58918663131:android:93e40d2de1c9f947b86dfe",
+        "android_client_info": {
+          "package_name": "com.example.chatterly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "58918663131-ai2iu05748r5t0ad1557ng0bhho469qk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_d0XDO1h8ZhxDwZ9jZhFw8EzeCk1ln5g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "58918663131-ai2iu05748r5t0ad1557ng0bhho469qk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
