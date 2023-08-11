@@ -14,6 +14,7 @@ class Register extends StatefulWidget {
 
 class _RegisterState extends State<Register> {
   // text controllers
+  final nameController = TextEditingController();
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
   final confirmPasswordController = TextEditingController();
@@ -29,7 +30,7 @@ class _RegisterState extends State<Register> {
 
     try {
       await authService.signUpWithEmailAndPassword(
-          emailController.text, passwordController.text);
+          emailController.text, passwordController.text, nameController.text);
     } catch (e) {
       ScaffoldMessenger.of(context)
           .showSnackBar(const SnackBar(content: Text("Error while login.")));
@@ -70,6 +71,17 @@ class _RegisterState extends State<Register> {
 
                   const SizedBox(
                     height: 25,
+                  ),
+
+                  // name textfield
+                  AuthTextField(
+                    controller: nameController,
+                    hint: "Full name",
+                    obscureText: false,
+                  ),
+
+                  const SizedBox(
+                    height: 10,
                   ),
 
                   // email textfield

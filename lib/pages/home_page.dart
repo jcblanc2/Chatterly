@@ -18,12 +18,17 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Chats"),
-        actions: [
-          IconButton(onPressed: signout, icon: const Icon(Icons.logout))
-        ],
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: Colors.grey[300],
+        appBar: AppBar(
+          title: const Text(
+            "Chats",
+          ),
+          actions: [
+            IconButton(onPressed: signout, icon: const Icon(Icons.logout))
+          ],
+        ),
       ),
     );
   }
