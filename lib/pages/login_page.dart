@@ -49,6 +49,7 @@ class _LoginPageState extends State<LoginPage> {
                   const Icon(
                     Icons.person,
                     size: 100,
+                    color: Color(0xFF2296f3),
                   ),
 
                   const SizedBox(
@@ -104,7 +105,10 @@ class _LoginPageState extends State<LoginPage> {
                       onTap: widget.onTap,
                       child: const Text(
                         "Register now",
-                        style: TextStyle(fontWeight: FontWeight.bold),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xFF2296f3),
+                        ),
                       ),
                     )
                   ])

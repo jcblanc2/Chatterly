@@ -18,7 +18,7 @@ class AuthTextField extends StatelessWidget {
       obscureText: obscureText,
       decoration: InputDecoration(
           enabledBorder: OutlineInputBorder(
-              borderSide: BorderSide(color: Colors.green.shade200)),
+              borderSide: BorderSide(color: Colors.grey.shade200)),
           focusedBorder: const OutlineInputBorder(
               borderSide: BorderSide(color: Colors.white)),
           fillColor: Colors.grey[200],

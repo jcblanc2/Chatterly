@@ -57,6 +57,7 @@ class _RegisterState extends State<Register> {
                   const Icon(
                     Icons.person,
                     size: 100,
+                    color: Color(0xFF2296f3),
                   ),
 
                   const SizedBox(
@@ -134,7 +135,10 @@ class _RegisterState extends State<Register> {
                       onTap: widget.onTap,
                       child: const Text(
                         "Login now",
-                        style: TextStyle(fontWeight: FontWeight.bold),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xFF2296f3),
+                        ),
                       ),
                     )
                   ])
