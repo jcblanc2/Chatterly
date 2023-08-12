@@ -87,33 +87,38 @@ class _HomePageState extends State<HomePage> {
     if (_firebaseAuth.currentUser!.email != data['email']) {
       List<String> names = data['fullname'].split(' ');
 
-      return ListTile(
-        title: Text(
-          data['fullname'],
-          style: const TextStyle(fontSize: 16),
-        ),
-        subtitle: Text(
-          data['email'],
-          style: const TextStyle(fontSize: 16),
-        ),
-        leading: CircleAvatar(
-          backgroundColor: randomColor(),
-          foregroundColor: Colors.white,
-          child: Text(names[0][0] + (names.length > 1 ? names[1][0] : ""),
-              style:
-                  const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
-        ),
-        onTap: () {
-          // navigate to the chat page
-          Navigator.push(
-              context,
-              MaterialPageRoute(
-                  builder: (context) => ChatPage(
-                        receiverFullName: data['fullname'],
-                        receiverEmail: data['email'],
-                        receiverUid: data['uid'],
-                      )));
-        },
+      return Column(
+        children: [
+          ListTile(
+            title: Text(
+              data['fullname'],
+              style: const TextStyle(fontSize: 16),
+            ),
+            subtitle: Text(
+              data['email'],
+              style: const TextStyle(fontSize: 16),
+            ),
+            leading: CircleAvatar(
+              backgroundColor: randomColor(),
+              foregroundColor: Colors.white,
+              child: Text(names[0][0] + (names.length > 1 ? names[1][0] : ""),
+                  style: const TextStyle(
+                      fontSize: 18, fontWeight: FontWeight.bold)),
+            ),
+            onTap: () {
+              // navigate to the chat page
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => ChatPage(
+                            receiverFullName: data['fullname'],
+                            receiverEmail: data['email'],
+                            receiverUid: data['uid'],
+                          )));
+            },
+          ),
+          const Divider(),
+        ],
       );
     } else {
       return Container();
