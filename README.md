@@ -11,7 +11,7 @@ Chatterly is a simple chat app built using Flutter and Firebase. It allows users
 
 ### App Walk-though
 
-<img src="https://i.imgur.com/sdOo0ck.gif" width=200><br>
+<img src="https://i.imgur.com/sdOo0ck.gif" width=250><br>
 
 ## Getting Started
 
